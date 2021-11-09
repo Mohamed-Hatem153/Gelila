@@ -17,6 +17,9 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+li{
+  list-style: none;
+}
         :root {
           --primary-color: #f5f0e9;
           --white-color: #ffffff;

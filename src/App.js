@@ -1,16 +1,25 @@
-import Slideshow from './components/Header/Header'
-import Navbar from './components/Navbar/Navbar';
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import BannerSlider from './components/BannerSlider/BannerSlider';
+import Navbar from "./components/Navbar/Navbar";
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import Services from './Pages/Services';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-    <Navbar/>
-      
-      <BannerSlider />
-    </div>
+    <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/about' element={<About/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/services' element={<Services/>}/>
+        </Routes>
+      </BrowserRouter>
   );
 }
 

@@ -1,25 +1,25 @@
-import { Component } from 'react';
-import BannerAnim from 'rc-banner-anim';
-import TweenOne, { TweenOneGroup } from 'rc-tween-one';
-import 'rc-banner-anim/assets/index.css';
+import { Component } from "react";
+import BannerAnim from "rc-banner-anim";
+import TweenOne, { TweenOneGroup } from "rc-tween-one";
+import "rc-banner-anim/assets/index.css";
 
-import sliderImage1 from '../../Assets/images/slide_v1_1.jpg';
-import sliderImage2 from '../../Assets/images/slide_v1_2.jpg';
-import sliderImage3 from '../../Assets/images/slide_v1_3.jpg';
-import lineImage from '../../Assets/images/line1.png';
+import sliderImage1 from "../../Assets/images/slide_v1_1.jpg";
+import sliderImage2 from "../../Assets/images/slide_v1_2.jpg";
+import sliderImage3 from "../../Assets/images/slide_v1_3.jpg";
+import lineImage from "../../Assets/images/line1.png";
 
-import './BannerSlider.css';
-// import BtnLink from '../Buttons/BtnLink/BtnLink';
+import "./BannerSlider.css";
+import BtnLink from "../Buttons/BtnLink/BtnLink";
 
 const { Element, Arrow, Thumb } = BannerAnim;
 const BgElement = Element.BgElement;
 
-// ATTENTION PLEASE, ##IBRAHIM KAMAL## here!!!!!!!
+// ATTENTION PLEASE, ##MOHAMED HATEM## here!!!!!!!
 // If you ask yourself why I used class component here!
 // because I use Ant Motion in this component to animate BannerSlider
 // and in the documentation they use class component
 // so it will take a lot of time to convert class component to function component
-// !!!!!!!!!! Ibrahim Kamal !!!!!!!!!!
+// !!!!!!!!!! Mohamed Hatem !!!!!!!!!!
 
 class BannerSlider extends Component {
   constructor() {
@@ -32,24 +32,24 @@ class BannerSlider extends Component {
       thumbEnter: false,
     };
     [
-      'onChange',
-      'prevEnter',
-      'prevLeave',
-      'nextEnter',
-      'nextLeave',
-      'onMouseEnter',
-      'onMouseLeave',
+      "onChange",
+      "prevEnter",
+      "prevLeave",
+      "nextEnter",
+      "nextLeave",
+      "onMouseEnter",
+      "onMouseLeave",
     ].forEach((method) => (this[method] = this[method].bind(this)));
   }
 
   onChange(type, int) {
-    if (type === 'before') {
+    if (type === "before") {
       this.setState({
         intShow: int,
       });
     }
   }
-
+  
   getNextPrevNumber() {
     let nextInt = this.state.intShow + 1;
     let prevInt = this.state.intShow - 1;
@@ -122,15 +122,15 @@ class BannerSlider extends Component {
                 className="bg"
                 style={{
                   backgroundImage: `url(${this.imgArray[0]})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
                 }}
               />
               <TweenOne
                 className="banner-user-title"
-                animation={{ y: 30, opacity: 0, type: 'from' }}
+                animation={{ y: 30, opacity: 0, type: "from" }}
               >
-                The best Agriculture products
+                The best company in exporting Egyptian crops
                 <img
                   src={lineImage}
                   alt="lineImage"
@@ -139,11 +139,11 @@ class BannerSlider extends Component {
               </TweenOne>
               <TweenOne
                 className="banner-user-text"
-                animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
+                animation={{ y: 30, opacity: 0, type: "from", delay: 100 }}
               >
-                Welcom to <br /> agriculture Form
+                Welcom to <br /> gelila import & export
                 <br />
-                
+                <BtnLink title='About Us'/>
               </TweenOne>
             </Element>
             <Element key="bbb" prefixCls="banner-user-elem">
@@ -152,15 +152,15 @@ class BannerSlider extends Component {
                 className="bg"
                 style={{
                   backgroundImage: `url(${this.imgArray[1]})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
                 }}
               />
               <TweenOne
                 className="banner-user-title"
-                animation={{ y: 30, opacity: 0, type: 'from' }}
+                animation={{ y: 30, opacity: 0, type: "from" }}
               >
-                The best Agriculture products
+                The best company in exporting Egyptian crops
                 <img
                   src={lineImage}
                   alt="lineImage"
@@ -169,11 +169,11 @@ class BannerSlider extends Component {
               </TweenOne>
               <TweenOne
                 className="banner-user-text"
-                animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
+                animation={{ y: 30, opacity: 0, type: "from", delay: 100 }}
               >
-                Welcom to <br /> agriculture Form
+                Welcom to <br /> gelila import & export
                 <br />
-               
+                <BtnLink title='About Us'/>
               </TweenOne>
             </Element>
             <Element key="ccc" prefixCls="banner-user-elem">
@@ -182,15 +182,15 @@ class BannerSlider extends Component {
                 className="bg"
                 style={{
                   backgroundImage: `url(${this.imgArray[2]})`,
-                  backgroundSize: 'cover',
-                  backgroundPosition: 'center',
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
                 }}
               />
               <TweenOne
                 className="banner-user-title"
-                animation={{ y: 30, opacity: 0, type: 'from' }}
+                animation={{ y: 30, opacity: 0, type: "from" }}
               >
-                The best Agriculture products
+                The best company in exporting Egyptian crops
                 <img
                   src={lineImage}
                   alt="lineImage"
@@ -199,11 +199,11 @@ class BannerSlider extends Component {
               </TweenOne>
               <TweenOne
                 className="banner-user-text"
-                animation={{ y: 30, opacity: 0, type: 'from', delay: 100 }}
+                animation={{ y: 30, opacity: 0, type: "from", delay: 100 }}
               >
-                Welcom to <br /> agriculture Form
+                Welcom to <br /> gelila import & export
                 <br />
-               
+                <BtnLink title='About Us'/>
               </TweenOne>
             </Element>
             <Arrow
@@ -217,7 +217,7 @@ class BannerSlider extends Component {
             >
               <div className="arrow"></div>
               <TweenOneGroup
-                enter={{ opacity: 0, type: 'from' }}
+                enter={{ opacity: 0, type: "from" }}
                 leave={{ opacity: 0 }}
                 appear={false}
                 className="img-wrapper"
@@ -242,7 +242,7 @@ class BannerSlider extends Component {
             >
               <div className="arrow"></div>
               <TweenOneGroup
-                enter={{ opacity: 0, type: 'from' }}
+                enter={{ opacity: 0, type: "from" }}
                 leave={{ opacity: 0 }}
                 appear={false}
                 className="img-wrapper"
