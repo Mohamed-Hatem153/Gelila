@@ -1,0 +1,39 @@
+.core-competencies {
+  background: url('../../Assets/images/1.jpg') top center/cover no-repeat;
+  /* padding: 100px 0; */
+  position: relative;
+}
+.core-competencies .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.core-competencies .span-row-3 {
+  grid-row: span 3 / auto;
+}
+.core-competencies .container {
+  width: 90%;
+  margin: auto;
+  max-height: 100%;
+}
+.core-competencies-title {
+  text-align: center;
+  padding-top: 3rem;
+}
+.core-competencies-title p {
+  color: var(--green-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+}
+.core-competencies-title h3 {
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 2rem;
+}
+.Competency{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

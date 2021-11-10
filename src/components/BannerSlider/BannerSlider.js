@@ -3,9 +3,9 @@ import BannerAnim from "rc-banner-anim";
 import TweenOne, { TweenOneGroup } from "rc-tween-one";
 import "rc-banner-anim/assets/index.css";
 
-import sliderImage1 from "../../Assets/images/slide_v1_1.jpg";
-import sliderImage2 from "../../Assets/images/slide_v1_2.jpg";
-import sliderImage3 from "../../Assets/images/slide_v1_3.jpg";
+import sliderImage1 from "../../Assets/images/vegetables.jpg";
+import sliderImage2 from "../../Assets/images/vegetables5.jpg";
+import sliderImage3 from "../../Assets/images/vegetables6.jpg";
 import lineImage from "../../Assets/images/line1.png";
 
 import "./BannerSlider.css";
