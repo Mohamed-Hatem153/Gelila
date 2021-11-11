@@ -13,7 +13,7 @@ import {
 const Navbar = () => {
   return (
     <div className="nav">
-      <div className="container">
+      <div className="container grid">
         <input type="checkbox" id="nav-check" />
         <div className="social-links">
           <ul className="social-links__list">

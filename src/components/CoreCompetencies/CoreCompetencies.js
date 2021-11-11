@@ -1,7 +1,7 @@
 import React from "react";
 import "./CoreCompetencies.css";
 import leaf from "../../Assets/images/leaf.png";
-import logo from "../../Assets/logo/logo_final.svg";
+import gelilacore from "../../Assets/images/core/gelilacore.png";
 import core1 from "../../Assets/images/core/core-1.png";
 import core2 from "../../Assets/images/core/core-2.png";
 import core3 from "../../Assets/images/core/core-3.png";
@@ -22,34 +22,18 @@ const CoreCompetencies = () => {
         </div>
         <div className="grid">
           <div className="Competency">
-            <div className="core-text">
-              <h3>Integrity</h3>
-              <p>We work honestly, ethically and honorably.</p>
+            <div className="core-text core-text2">
+              <h3>Uncompromised Quality</h3>
+              <p>
+                We are dedicated to always supply the top quality fresh produce.
+              </p>
             </div>
             <div className="core-img">
-              <img src={core2} />
+              <img src={core1} />
             </div>
           </div>
-          <div className="span-row-3 Competency">
-            <img src={logo} alt="gelila logo" />
-          </div>
-          <div className="Competency">
-            <div className="core-img">
-              <img src={core2} />
-            </div>
-            <div className="core-text">
-              <h3>Integrity</h3>
-              <p>We work honestly, ethically and honorably.</p>
-            </div>
-          </div>
-          <div className="Competency">
-            <div className="core-text">
-              <h3>Integrity</h3>
-              <p>We work honestly, ethically and honorably.</p>
-            </div>
-            <div className="core-img">
-              <img src={core2} />
-            </div>
+          <div className="span-row-3 Competency gelilacore">
+            <img src={gelilacore} alt="gelila logo" />
           </div>
           <div className="Competency">
             <div className="core-img">
@@ -61,21 +45,53 @@ const CoreCompetencies = () => {
             </div>
           </div>
           <div className="Competency">
-            <div className="core-text">
-              <h3>Integrity</h3>
-              <p>We work honestly, ethically and honorably.</p>
+            <div className="core-text core-text2">
+              <h3>Service Oriented</h3>
+              <p>
+                We strive to deliver the best solution and services to our
+                customer.
+              </p>
             </div>
             <div className="core-img">
-              <img src={core2} />
+              <img src={core3} />
             </div>
           </div>
           <div className="Competency">
             <div className="core-img">
-              <img src={core2} />
+              <img src={core4} />
             </div>
             <div className="core-text">
-              <h3>Integrity</h3>
-              <p>We work honestly, ethically and honorably.</p>
+              <h3>Family culture</h3>
+              <p>
+                We believe our employees are our family and therefore we strive
+                to be respectful, caring and compassionate with one another.
+              </p>
+            </div>
+          </div>
+          <div className="Competency">
+            <div className="core-text core-text2">
+              <h3>Dedication</h3>
+              <p>
+                We have been committed to this business for the last 40 years,
+                our commitment and dedication is reflected in our high standard
+                product and services on daily basis.
+              </p>
+            </div>
+            <div className="core-img">
+              <img src={core5} />
+            </div>
+          </div>
+          <div className="Competency">
+            <div className="core-img">
+              <img src={core6} />
+            </div>
+            <div className="core-text">
+              <h3>Community & Environmental practice</h3>
+              <p>
+                We act responsibly as members of the community in which we
+                operate and we respect our environment by recycling, reusing and
+                reducing our waste.
+              </p>
             </div>
           </div>
         </div>
