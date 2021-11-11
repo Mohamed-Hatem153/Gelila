@@ -40,6 +40,9 @@
   font-weight: 700;
   letter-spacing: 1.5;
   color: var(--green-color);
+  /* text-decoration: underline; */
+  border: 3px dashed var(--green-color);
+  padding: 5px;
 }
 .whychooseus .grid {
   display: grid;
@@ -56,13 +59,12 @@
   box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
   border-radius: 20px;
   border: 5px solid rgba(0, 0, 0, 0.07);
-  margin-bottom: 30px;
   -webkit-transition: all 0.5s ease 0;
   transition: all 0.5s ease 0;
   transition: all 0.5s ease 0s;
   /* max-width: 300px; */
   /* margin: auto; */
-  margin-bottom: 20px;
+  margin-bottom: 60px;
   max-height: 24rem;
 }
 
@@ -108,8 +110,8 @@
   color: var(--green-color);
   font-size: 15px;
 }
-.whychooseus-title .grid{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    /* grid-gap: 10px; */
+.whychooseus-title .grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  /* grid-gap: 10px; */
 }

@@ -3,7 +3,9 @@ import BannerSlider from '../components/BannerSlider/BannerSlider'
 import ServicesWeOffer from '../components/ServecisWeOffer/ServecisWeOffer'
 import CoreCompetencies from '../components/CoreCompetencies/CoreCompetencies'
 import WhyChooseUs from '../components/WhyChooseUs/WhyChooseUs'
+
 import WeAre from '../components/WeAre/WeAre'
+import FeaturedProducts from '../components/FeaturedProducts/FeaturedProducts'
 
 const Home = () => {
     return (
@@ -12,6 +14,7 @@ const Home = () => {
             <ServicesWeOffer />
             <CoreCompetencies />
             <WhyChooseUs />
+            <FeaturedProducts />
         </div>
     )
 }
