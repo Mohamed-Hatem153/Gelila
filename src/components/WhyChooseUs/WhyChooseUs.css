@@ -1,7 +1,8 @@
-.whychooseus{
-    background: url('../../Assets/images/whychooseusback.jpg') top center/cover no-repeat;
+.whychooseus {
+  background: url("../../Assets/images/whychooseusback.jpg") top center/cover
+    no-repeat;
 }
-.whychooseus .conttainer {
+.whychooseus .container {
   width: 90%;
   margin: auto;
   max-height: 100%;
@@ -11,6 +12,7 @@
   padding-top: 4rem;
   padding-bottom: 3rem;
 }
+
 .whychooseus-title p {
   color: var(--green-color);
   text-transform: uppercase;
@@ -22,75 +24,92 @@
   font-weight: 700;
   font-size: 2rem;
 }
-.whygelila .whyus{
-    /* padding-top: 0.5rem; */
+.whygelila .whyus {
+  /* padding-top: 0.5rem; */
   text-align: center;
   margin-bottom: 3rem;
 }
-.whygelila .whyus p{
-    font-weight: 500;
+.whygelila .whyus p {
+  font-weight: 500;
   line-height: 1.5;
   font-family: var(--primary-font-family);
-  font-size: 20px;
+  font-size: 23px;
+}
+.whygelila .whyus span {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1.5;
+  color: var(--green-color);
 }
 .whychooseus .grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    /* max-width: 100%; */
-    /* margin: auto; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  /* max-width: 100%; */
+  /* margin: auto; */
 }
 .whychooseus .item {
-    background: var(--primary-color);
-    text-align: center;
-    padding: 30px 25px;
-    -webkit-box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
-    box-shadow:0 0px 25px rgba(0, 0, 0, 0.07);
-    border-radius: 20px;
-    border:5px solid rgba(0, 0, 0, 0.07);
-    margin-bottom: 30px;
-    -webkit-transition: all .5s ease 0;
-    transition: all .5s ease 0;
-    transition: all 0.5s ease 0s;
-    max-width: 300px;
-    margin: auto;
+  background: var(--primary-color);
+  text-align: center;
+  padding: 30px 25px;
+  -webkit-box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
+  box-shadow: 0 0px 25px rgba(0, 0, 0, 0.07);
+  border-radius: 20px;
+  border: 5px solid rgba(0, 0, 0, 0.07);
+  margin-bottom: 30px;
+  -webkit-transition: all 0.5s ease 0;
+  transition: all 0.5s ease 0;
+  transition: all 0.5s ease 0s;
+  /* max-width: 300px; */
+  /* margin: auto; */
+  margin-bottom: 20px;
+  max-height: 24rem;
 }
-.item:hover{
-    background:#f1592a;
-    box-shadow:0 8px 20px 0px rgba(0, 0, 0, 0.2);
-    -webkit-transition: all .5s ease 0;
-    transition: all .5s ease 0;
-    transition: all 0.5s ease 0s;
+
+.item:hover {
+  background: #f1592a;
+  box-shadow: 0 8px 20px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.5s ease 0;
+  transition: all 0.5s ease 0;
+  transition: all 0.5s ease 0s;
 }
-.item:hover .item, .item:hover span.icon{
-    background:#fff;
-    border-radius:10px;
-    -webkit-transition: all .5s ease 0;
-    transition: all .5s ease 0;
-    transition: all 0.5s ease 0s;
+.item:hover .item,
+.item:hover span.icon {
+  background: #fff;
+  border-radius: 10px;
+  -webkit-transition: all 0.5s ease 0;
+  transition: all 0.5s ease 0;
+  transition: all 0.5s ease 0s;
 }
-.item:hover h6, .item:hover p{
-    color:#fff;
-    -webkit-transition: all .5s ease 0;
-    transition: all .5s ease 0;
-    transition: all 0.5s ease 0s;
+.item:hover h6,
+.item:hover p {
+  color: #fff;
+  -webkit-transition: all 0.5s ease 0;
+  transition: all 0.5s ease 0;
+  transition: all 0.5s ease 0s;
 }
 .item .icon {
-    font-size: 40px;
-    margin-bottom:25px;
-    color: var(--green-color);   
-    width: 90px;
-    height: 90px;
-    line-height: 96px;
-    border-radius: 50px;
-    background:rgba(247, 198, 5, 0.20);
-    /* color:#f91942 */
+  font-size: 40px;
+  margin-bottom: 25px;
+  color: var(--green-color);
+  width: 90px;
+  height: 90px;
+  line-height: 96px;
+  border-radius: 50%;
+  background: rgba(247, 198, 5, 0.2);
+  display: inline-block;
 }
-.item p{
-    font-size:15px;
-    line-height:26px;
+.item p {
+  font-size: 15px;
+  line-height: 26px;
 }
 .item h6 {
-    margin-bottom:20px;
-    color:#2f2f2f;
+  margin-bottom: 20px;
+  color: var(--green-color);
+  font-size: 15px;
+}
+.whychooseus-title .grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-gap: 10px; */
 }
