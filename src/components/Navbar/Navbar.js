@@ -1,5 +1,6 @@
 import React from "react";
 import {Link} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import "./Navbar.css";
 import logo from "../../Assets/logo/logo_final.svg";
 import header from "../../Assets/images/header-bg.png";
@@ -11,6 +12,7 @@ import {
 } from "react-icons/fa";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   return (
     <div className="nav">
       <div className="container grid">
@@ -33,7 +35,7 @@ const Navbar = () => {
         </div>
         <div className="nav-header">
           <div className="nav-title">
-            <img src={logo} alt="logo" />
+            <img src={logo} alt="logo" onClick={() => navigate("/")}/>
           </div>
         </div>
         <div className="nav-btn">
@@ -46,8 +48,9 @@ const Navbar = () => {
 
         <div className="nav-links">
           <Link className='link' to='/'>Home</Link>
-          <Link className='link' to='/services'>Servises</Link>
+          <Link className='link' to='/contact'>Products</Link>
           <Link className='link' to='/about' >About</Link>
+          <Link className='link' to='/contact'>Services</Link>
           <Link className='link' to='/contact'>Contact</Link>
           <div className="social-links-mobile">
           <ul className="social-links-mobile-list">

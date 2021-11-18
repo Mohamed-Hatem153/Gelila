@@ -12,7 +12,7 @@ import core6 from "../../Assets/images/core/core-6.png";
 const CoreCompetencies = () => {
   return (
     <div className="core-competencies">
-      <div className="container">
+      <div className="container grid">
         <div className="core-competencies-title">
           <p>what we do</p>
           <h3>Our Core Competencies</h3>
@@ -29,7 +29,7 @@ const CoreCompetencies = () => {
               </p>
             </div>
             <div className="core-img">
-              <img src={core1} />
+              <img src={core1} alt='core1'/>
             </div>
           </div>
           <div className="span-row-3 Competency gelilacore">
@@ -37,7 +37,7 @@ const CoreCompetencies = () => {
           </div>
           <div className="Competency">
             <div className="core-img">
-              <img src={core2} />
+              <img src={core2} alt='core2'/>
             </div>
             <div className="core-text">
               <h3>Integrity</h3>
@@ -53,12 +53,12 @@ const CoreCompetencies = () => {
               </p>
             </div>
             <div className="core-img">
-              <img src={core3} />
+              <img src={core3} alt='core3'/>
             </div>
           </div>
           <div className="Competency">
             <div className="core-img">
-              <img src={core4} />
+              <img src={core4} alt='core4'/>
             </div>
             <div className="core-text">
               <h3>Family culture</h3>
@@ -78,12 +78,12 @@ const CoreCompetencies = () => {
               </p>
             </div>
             <div className="core-img">
-              <img src={core5} />
+              <img src={core5} alt='core5'/>
             </div>
           </div>
           <div className="Competency">
             <div className="core-img">
-              <img src={core6} />
+              <img src={core6} alt='core6'/>
             </div>
             <div className="core-text">
               <h3>Community & Environmental practice</h3>

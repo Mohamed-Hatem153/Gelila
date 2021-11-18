@@ -9,19 +9,15 @@ import "./WhyChooseUs.css";
 const WhyChooseUs = () => {
   return (
     <div className="whychooseus">
-      <div className="container">
+      <div className="container grid">
         <div className="whychooseus-title">
-          <div className="grid">
-            <div>
-              <p>we are gelila</p>
-              <h3>why choose gelila.?</h3>
-              <div>
-                <img src={leaf} alt="leaf" />
-              </div>
-            </div>
+          <p>we are gelila</p>
+          <h3>why choose gelila.?</h3>
+          <div>
+            <img src={leaf} alt="leaf" />
           </div>
         </div>
-        <div className="whygelila">
+        <div className="whygelila grid">
           <div className="whyus">
             <p>
               <span>GELILA</span> always ensures the maximum quality and we

@@ -8,7 +8,7 @@ import featureThree from "../../Assets/images/service-1-img-3.jpg";
 const ServecisWeOffer = () => {
   return (
     <div className="services-we-offer">
-      <div className="container">
+      <div className="container grid">
         <div className="servecis-title">
           <p>who we are</p>
           <h3>Features of our products</h3>

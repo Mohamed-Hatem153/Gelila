@@ -4,7 +4,12 @@
   position: relative;
   padding-bottom: 70px;
 }
-.core-competencies .grid {
+.core-competencies .grid{
+  display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+}
+.core-competencies .container .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
@@ -89,4 +94,12 @@
 }
 .gelilacore img{
   max-width: 100%;
+}
+@media (max-width: 1130px) {
+  .core-competencies .container .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+  
 }

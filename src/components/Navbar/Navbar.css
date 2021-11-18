@@ -21,6 +21,15 @@
   max-height: 100%;
   text-align: center;
 }
+.social-links{
+  width: 33.333333%;
+}
+.nav-header{
+  width: 33.333333%;
+}
+.nav-links{
+  width: 33.333333%;
+}
 /* .nav .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -42,6 +51,7 @@
 }
 .nav-title img {
   width: 138px;
+  cursor: pointer;
 }
 .container > .nav-header > .nav-title {
   /* display: inline-block; */
